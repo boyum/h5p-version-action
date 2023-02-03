@@ -24,7 +24,7 @@ jobs:
       - uses: ./
         id: check-version
         with:
-          working-directory: "test"
+          working-directory: test
 
       - if: ${{steps.check-version.outputs.version-formatted}} != "1.2.3"
-        run: exit 1
+        run: "echo 'Test failed. Expected 1.2.3, actual: ${{steps.check-version.outputs.version-formatted}}' && exit 1"
