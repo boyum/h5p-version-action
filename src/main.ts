@@ -34,7 +34,7 @@ async function run(): Promise<void> {
       patchVersion: patch,
     } = library;
 
-    core.info("Outputting version info");
+    core.info(`Outputting version info: ${major}.${minor}.${patch}`);
     core.setOutput(outputs.version, { major, minor, patch });
     core.setOutput(outputs.versionFormatted, `${major}.${minor}.${patch}`);
   } catch (error) {
