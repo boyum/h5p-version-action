@@ -62,7 +62,7 @@ function run() {
             core.info("Finding library file");
             const library = yield (0, utils_1.readLibrary)(workingDirectory);
             const { majorVersion: major, minorVersion: minor, patchVersion: patch, } = library;
-            core.info("Outputting version info");
+            core.info(`Outputting version info: ${major}.${minor}.${patch}`);
             core.setOutput(outputs.version, { major, minor, patch });
             core.setOutput(outputs.versionFormatted, `${major}.${minor}.${patch}`);
         }
