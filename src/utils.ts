@@ -10,7 +10,7 @@ export async function readLibrary(directory: string): Promise<H5PLibrary> {
     libraryString = (await fs.promises.readFile(libraryPath)).toString("utf-8");
   } catch (error) {
     console.error(error);
-    throw new Error(`Could nfot find library file at '${libraryPath}'.`);
+    throw new Error(`Could not find library file at '${libraryPath}'.`);
   }
 
   let library: H5PLibrary;
