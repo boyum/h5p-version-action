@@ -1,8 +1,8 @@
 import fs from "fs";
-import type { Library } from "h5p-types";
+import type { H5PLibrary } from "h5p-types";
 import path from "path";
 
-export async function readLibrary(directory: string): Promise<Library> {
+export async function readLibrary(directory: string): Promise<H5PLibrary> {
   const libraryPath = path.join(directory, "library.json");
   let libraryString: string;
 
@@ -13,7 +13,7 @@ export async function readLibrary(directory: string): Promise<Library> {
     throw new Error(`Could not find library file at '${libraryPath}'.`);
   }
 
-  let library: Library;
+  let library: H5PLibrary;
 
   try {
     library = JSON.parse(libraryString);
