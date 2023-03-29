@@ -108,7 +108,7 @@ function readLibrary(directory) {
         }
         catch (error) {
             console.error(error);
-            throw new Error(`Could not find lifbrary file at '${libraryPath}'.`);
+            throw new Error(`Could not find library file at '${libraryPath}'.`);
         }
         let library;
         try {
