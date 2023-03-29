@@ -46,3 +46,4 @@ jobs:
           title: "[create-pull-request] update dist"
           commit-message: "[create-pull-request] update dist"
           delete-branch: true
+          base: ${{ github.head_ref	}}
