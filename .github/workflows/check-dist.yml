@@ -3,13 +3,17 @@
 # `index.js` is the code that will run.
 # For our project, we generate this file through a build process from other source files.
 # We need to make sure the checked-in `index.js` actually matches what we expect it to be.
-name: Check dist/
+name: Check dist
 
 on:
   pull_request:
     paths-ignore:
       - "**.md"
   workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   check-dist:
@@ -42,3 +46,4 @@ jobs:
           title: "[create-pull-request] update dist"
           commit-message: "[create-pull-request] update dist"
           delete-branch: true
+          base: ${{ github.head_ref	}}
