@@ -11,6 +11,10 @@ on:
       - "**.md"
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   check-dist:
     runs-on: ubuntu-latest
