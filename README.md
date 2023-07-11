@@ -12,10 +12,10 @@ This action reads the version number from `library.json` in an H5P project and o
 
 ### Outputs
 
-| Name                | Description                                                                         | Example                             |
-| ------------------- | ----------------------------------------------------------------------------------- | ----------------------------------- |
+| Name                | Description                                                                         | Example                              |
+| ------------------- | ----------------------------------------------------------------------------------- | ------------------------------------ |
 | `version`           | The main version as a JSON string with the properties `major`, `minor`, and `patch` | `"{ major: 1, minor: 2, patch: 3 }"` |
-| `version-formatted` | The main version as a string on the format `major.minor.patch`                      | `"1.2.3"`                           |
+| `version-formatted` | The main version as a string on the format `major.minor.patch`                      | `"1.2.3"`                            |
 
 ## Development
 
