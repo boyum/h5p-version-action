@@ -21,5 +21,5 @@ outputs:
     description: A string on the form `{majorVersion}.{minorVersion}.{patchVersion}`
 
 runs:
-  using: node16
+  using: node20
   main: dist/index.js
