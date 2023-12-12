@@ -39,11 +39,11 @@ jobs:
           fi
         id: diff
 
-      - name: Create Pull Request
+      - name: Create Pull Request with changes to dist
         if: ${{ failure() && steps.diff.conclusion == 'failure' }}
         uses: peter-evans/create-pull-request@v5
         with:
-          title: "[create-pull-request] update dist"
-          commit-message: "[create-pull-request] update dist"
+          title: "chore: rebuild dist"
+          commit-message: "chore: rebuild dist"
           delete-branch: true
           base: ${{ github.head_ref	}}
