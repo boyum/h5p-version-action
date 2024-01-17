@@ -7,8 +7,7 @@
     "strict": true /* Enable all strict type-checking options. */,
     "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
     "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
-    "ignoreDeprecations": "5.0"
   },
   "exclude": ["node_modules", "dist", "lib", "jest.config.js"],
-  "extends": "@tsconfig/strictest/tsconfig.json"
+  "extends": "@tsconfig/strictest/tsconfig.json",
 }
