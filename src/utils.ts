@@ -1,6 +1,6 @@
-import fs from "fs";
 import type { H5PLibrary } from "h5p-types";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 
 export async function readLibrary(directory: string): Promise<H5PLibrary> {
   const libraryPath = path.join(directory, "library.json");
