@@ -1,5 +1,5 @@
 import * as core from "@actions/core";
-import { readLibrary } from "./utils";
+import { readLibrary } from "./utils.js";
 
 const options = {
   workingDirectory: "working-directory",
