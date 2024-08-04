@@ -2806,7 +2806,7 @@ async function readLibrary(directory) {
     }
     catch (error) {
         console.error(error);
-        throw new Error(`Could not parse library file.`);
+        throw new Error("Could not parse library file.");
     }
     return library;
 }

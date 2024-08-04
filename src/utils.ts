@@ -1,6 +1,6 @@
-import type { H5PLibrary } from "h5p-types";
 import fs from "node:fs";
 import path from "node:path";
+import type { H5PLibrary } from "h5p-types";
 
 export async function readLibrary(directory: string): Promise<H5PLibrary> {
   const libraryPath = path.join(directory, "library.json");
@@ -19,7 +19,7 @@ export async function readLibrary(directory: string): Promise<H5PLibrary> {
     library = JSON.parse(libraryString);
   } catch (error) {
     console.error(error);
-    throw new Error(`Could not parse library file.`);
+    throw new Error("Could not parse library file.");
   }
 
   return library;
