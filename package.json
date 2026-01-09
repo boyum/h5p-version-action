@@ -24,7 +24,7 @@
     "package": "ncc build --source-map --license licenses.txt"
   },
   "dependencies": {
-    "@actions/core": "^2.0.0"
+    "@actions/core": "^2.0.2"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.8",
